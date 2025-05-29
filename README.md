@@ -24,7 +24,7 @@ This is a backend system built using **FastAPI** as part of a backend developer 
 ### 📁 Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/fastapi-sales-analytics.git
+git clone https://github.com/Pawanverma9660/fastapi-sales-analytics.git
 cd fastapi-sales-analytics
 ```
 
@@ -36,13 +36,6 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 🔑 Create `.env` File
-
-```env
-SECRET_KEY=your_secret_key
-ALGORITHM=HS256
-DATABASE_URL=sales.db
-```
 
 ### ▶️ Run the App
 
@@ -77,7 +70,7 @@ Visit: http://127.0.0.1:8000/docs for Swagger UI
 | GET    | `/analytics/summary` | Sales summary | Admin only |
 | GET    | `/analytics/top-customers?limit=N` | Top N customers | Admin only |
 | GET    | `/analytics/by-date?from=...&to=...` | Sales in date range | Admin only |
-| POST   | `/compress-string` | Compress input string | Authenticated |
+
 
 ---
 
@@ -102,12 +95,9 @@ app/
 ├── database.py      # SQLite DB connection and init
 ├── models.py        # Pydantic models
 ├── sales.py         # Sales analytics & upload
-├── utils.py         # Compression endpoint
 ├── main.py          # FastAPI app
-├── config.py        # Environment variable loader
 requirements.txt
 README.md
-.env (not committed)
 ```
 
 ---
@@ -131,11 +121,6 @@ You can test all APIs using this shared Postman collection:
 
 ---
 
-## 📬 Submission
-
-This project was created as part of the XTechOn Backend Developer Assignment due by **30-May-2025**.
-
----
 
 ## 🧠 Author
 
